@@ -18,7 +18,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 w-full z-50 py-5 bg-white shadow-lg">
+    <nav className="sticky top-0 w-full z-50 py-3 bg-white shadow-lg">
       <div className="my-container flex items-center justify-between">
         <Link href="/">
           <span className="text-xl font-bold text-primary">Viscart</span>

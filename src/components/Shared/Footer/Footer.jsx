@@ -41,13 +41,13 @@ const footerData = [
 const Footer = () => {
   return (
     <section className="relative bg-[#e6d5f9] lg:bg-transparent">
-      <footer className="pt-10">
+      <footer className="pt-20">
         <Image
           src={footer}
           alt="footer"
-          className="w-full absolute -z-10 top-0 bottom-0 h-full lg:h-[550px] hidden lg:block"
+          className="w-full absolute -z-10 top-0 bottom-0 h-full lg:h-[650px] hidden lg:block "
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-0 xl:gap-10 items-start justify-center my-container lg:mt-32">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-0 xl:gap-10 items-start justify-center my-container lg:mt-48">
           <ContactInfo />
 
           {footerData?.map((item, i) => (
