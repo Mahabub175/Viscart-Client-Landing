@@ -4,6 +4,8 @@ import Link from "next/link";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import ContactInfo from "./ContactInfo";
+import footer from "@/assets/images/footer.png";
+import Image from "next/image";
 
 const footerData = [
   {
@@ -19,8 +21,8 @@ const footerData = [
   {
     title: "Required pages",
     links: [
-      { name: "Features", to: "/pricing" },
-      { name: "Pricing", to: "/pricing" },
+      { name: "Features", to: "/" },
+      { name: "Pricing", to: "/" },
       { name: "Help post", to: "/" },
       { name: "Business Growth", to: "/" },
     ],
@@ -38,9 +40,14 @@ const footerData = [
 
 const Footer = () => {
   return (
-    <section className="mb-16 lg:mb-0">
+    <section className="relative bg-[#e6d5f9] lg:bg-transparent">
       <footer className="pt-10">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-0 xl:gap-10 items-start justify-center my-container">
+        <Image
+          src={footer}
+          alt="footer"
+          className="w-full absolute -z-10 top-0 bottom-0 h-full lg:h-[550px] hidden lg:block"
+        />
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-0 xl:gap-10 items-start justify-center my-container lg:mt-32">
           <ContactInfo />
 
           {footerData?.map((item, i) => (

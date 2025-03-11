@@ -9,8 +9,8 @@ import { usePathname } from "next/navigation";
 
 const links = [
   { name: "Home", link: "/" },
-  { name: "About Us", link: "/about" },
-  { name: "Contact Us", link: "/contact" },
+  { name: "About Us", link: "/" },
+  { name: "Contact Us", link: "/" },
 ];
 
 const Navbar = () => {
@@ -39,7 +39,7 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex">
-          <Link href="/contact">
+          <Link href="mailto:vitasoftsolution@gmail.com">
             <button className="text-white bg-primary px-10 py-2 rounded-lg font-bold">
               Contact
             </button>
@@ -69,7 +69,7 @@ const Navbar = () => {
                 {link.name}
               </Link>
             ))}
-            <Link href="/contact">
+            <Link href="mailto:vitasoftsolutions@gmail.com">
               <button className="text-white bg-primary px-10 py-2 rounded-lg font-bold">
                 Contact
               </button>
