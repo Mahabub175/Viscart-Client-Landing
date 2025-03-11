@@ -82,28 +82,28 @@ const Footer = () => {
 
           <div className="flex gap-5">
             <Link
-              href={"/"}
+              href={"https://www.facebook.com/vitasoft.solutions"}
               target="_blank"
               className="flex items-center gap-4"
             >
               <FaFacebook className="text-4xl bg-primary p-2 rounded-full text-white hover:scale-110 duration-300" />
             </Link>
             <Link
-              href={"/"}
+              href={"https://bd.linkedin.com/company/vitasoft-solution"}
               target="_blank"
               className="flex items-center gap-4"
             >
               <FaLinkedin className="text-4xl bg-primary p-2 rounded-full text-white hover:scale-110 duration-300" />
             </Link>
             <Link
-              href={"/"}
+              href={"https://www.instagram.com/vitasoft_solutions/"}
               target="_blank"
               className="flex items-center gap-4"
             >
               <FaInstagram className="text-4xl bg-primary p-2 rounded-full text-white hover:scale-110 duration-300" />
             </Link>
             <Link
-              href={"/"}
+              href={"https://x.com/vitasoft_"}
               target="_blank"
               className="flex items-center gap-4"
             >

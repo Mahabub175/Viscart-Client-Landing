@@ -18,20 +18,20 @@ const Demo = () => {
         {demoData?.map((item) => (
           <div
             key={item?.id}
-            className="border-2 rounded-xl hover:border-primary duration-300 group hover:shadow-xl"
+            className="border-2 rounded-xl hover:border-primary duration-300 group hover:shadow-xl w-[300px] h-auto"
           >
-            <div className="rounded-t-xl overflow-hidden w-[300px]">
+            <div className="rounded-t-xl overflow-hidden w-full">
               <Image
                 src={item?.image}
                 alt={item?.title}
                 width={300}
                 height={300}
-                className="object-cover w-full h-full group-hover:scale-110 duration-500"
+                className="object-cover w-full h-[200px] group-hover:scale-110 duration-500"
               />
             </div>
-            <div className="mt-5 text-center px-5 pb-4">
+            <div className="mt-5 text-center px-4 pb-4">
               <h3 className="text-xl font-semibold">{item?.title}</h3>
-              <p>{item?.description}</p>
+              <p className="text-gray-500">{item?.description?.slice(0, 48)}</p>
               <Link href={item?.url} target="_blank">
                 <button className="border border-primary rounded-lg text-sm px-6 py-2 hover:bg-primary hover:text-white duration-300 mt-3 font-medium">
                   Explore Demo
