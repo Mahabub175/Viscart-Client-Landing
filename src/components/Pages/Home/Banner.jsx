@@ -7,11 +7,11 @@ const Banner = () => {
   return (
     <section
       style={{ backgroundImage: `url('/bg.png')` }}
-      className="bg-cover h-[120vh] lg:h-screen bg-no-repeat bg-center"
+      className="bg-cover h-[120vh] lg:h-[102vh] bg-no-repeat bg-center -mb-20 lg:-mb-10"
     >
-      <div className="flex flex-col lg:flex-row gap-10 justify-center items-center text-white my-container text-center lg:text-start pt-10 lg:pt-32 lg:-mt-28">
+      <div className="flex flex-col lg:flex-row gap-10 justify-center items-center text-white my-container text-center lg:text-start pt-10 lg:pt-44 lg:-mt-32">
         <div>
-          <h1 className="text-3xl lg:text-5xl font-bold leading-loose">
+          <h1 className="text-3xl lg:text-5xl font-bold">
             <span className="text-violet-300">Viscart Demo</span> - Single
             Vendor Marketplace Software Project
           </h1>
