@@ -64,6 +64,5 @@ export const demoData = [
     title: "Coming Soon!",
     description: "More demos are coming soon!",
     image: coming,
-    url: "/",
   },
 ];

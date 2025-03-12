@@ -18,7 +18,7 @@ const Demo = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 xxl:grid-cols-4 gap-x-5 gap-y-5 lg:gap-y-12 justify-center mt-10">
         {demoData?.map((item) => (
           <Link
-            href={item?.url}
+            href={item?.url ?? "/"}
             target="_blank"
             key={item?.id}
             className="group lg:w-[350px] h-auto hover:shadow rounded-xl hover:-translate-y-2 duration-500 mx-auto"
@@ -34,13 +34,15 @@ const Demo = () => {
             </div>
             <div className="mt-3 px-2 pb-4 flex items-center justify-between">
               <h3 className="text-lg font-semibold">{item?.title}</h3>
-              <button className="text-sm flex flex-col items-center opacity-0 translate-x-[-10px] transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:translate-x-0">
-                <div className="flex items-center gap-1">
-                  <IoIosArrowRoundForward className="text-2xl" />
-                  Explore Demo
-                </div>
-                <span className="w-0 h-[2px] bg-gray-400 transition-all duration-300 ease-in-out group-hover:w-full"></span>
-              </button>
+              {item?.url && (
+                <button className="text-sm flex flex-col items-center opacity-0 translate-x-[-10px] transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:translate-x-0">
+                  <div className="flex items-center gap-1">
+                    <IoIosArrowRoundForward className="text-2xl" />
+                    Explore Demo
+                  </div>
+                  <span className="w-0 h-[2px] bg-gray-400 transition-all duration-300 ease-in-out group-hover:w-full"></span>
+                </button>
+              )}
             </div>
           </Link>
         ))}
