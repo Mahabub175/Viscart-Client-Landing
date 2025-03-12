@@ -21,15 +21,15 @@ const Demo = () => {
             href={item?.url ?? "/"}
             target="_blank"
             key={item?.id}
-            className="group lg:w-[350px] h-auto hover:shadow rounded-xl hover:-translate-y-2 duration-500 mx-auto"
+            className="group lg:w-[350px] h-auto shadow hover:shadow-lg rounded-xl hover:-translate-y-2 duration-500 mx-auto border"
           >
-            <div className="rounded-xl overflow-hidden w-full">
+            <div className="rounded-t-xl overflow-hidden w-full">
               <Image
                 src={item?.image}
                 alt={item?.title}
                 width={350}
                 height={300}
-                className="object-cover w-full h-[250px]"
+                className="object-cover w-full h-[250px] border-b"
               />
             </div>
             <div className="mt-3 px-2 pb-4 flex items-center justify-between">

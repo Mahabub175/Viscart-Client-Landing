@@ -3,14 +3,40 @@
 import Image from "next/image";
 import banner from "@/assets/images/banner2.png";
 import bg from "@/assets/images/bg.png";
+import icon from "@/assets/images/Icon.png";
 
 const Banner = () => {
   return (
     <section className="relative -mb-20 lg:mb-16 xl:-mb-1 xxl:mb-0">
       <Image
         src={bg}
-        alt="wave"
-        className="w-full absolute -top-20 -z-10 h-full lg:h-[650px] xxl:h-[700px]"
+        alt="bg"
+        className="w-full absolute -top-20 -z-10 h-full lg:h-[650px] xxl:h-[700px] object-fill"
+      />
+      <Image
+        src={icon}
+        alt="icon"
+        className="absolute top-20 left-20 -z-10 hidden lg:block"
+      />
+      <Image
+        src={icon}
+        alt="icon"
+        className="absolute top-[40%] lg:top-10 left-[10%] lg:left-[80%] -z-10"
+      />
+      <Image
+        src={icon}
+        alt="icon"
+        className="absolute top-52 lg:top-[65%] right-[15%] -z-10"
+      />
+      <Image
+        src={icon}
+        alt="icon"
+        className="absolute bottom-32 left-44 -z-10 hidden lg:block"
+      />
+      <Image
+        src={icon}
+        alt="icon"
+        className="absolute top-[4%] left-[45%] -z-10"
       />
       <div className="flex flex-col lg:flex-row lg:gap-10 justify-center items-center text-white my-container text-center lg:text-start pb-32 pt-10 lg:pt-0 xl:-mt-5">
         <div className="lg:mt-28 xxl:mt-0">
