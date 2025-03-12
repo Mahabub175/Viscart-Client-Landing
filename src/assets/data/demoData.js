@@ -1,59 +1,69 @@
-import komedei from "@/assets/images/komedei.png";
+import komedei from "@/assets/images/kome.png";
 import tools from "@/assets/images/tools.png";
-import arshop from "@/assets/images/arshop.png";
-import v2 from "@/assets/images/v2.png";
-import v4 from "@/assets/images/v4.png";
-import v5 from "@/assets/images/v5.png";
-import v6 from "@/assets/images/v6.png";
+import arshop from "@/assets/images/ar.png";
+import v2 from "@/assets/images/cosmetics.png";
+import v4 from "@/assets/images/borkha.png";
+import v5 from "@/assets/images/food.png";
+import v6 from "@/assets/images/yahmex.png";
+// import coming from "@/assets/images/coming.png";
+import coming from "@/assets/images/comingbg.png";
 
 export const demoData = [
   {
     id: 1,
-    title: "Komedei",
-    description: "Komedei is for various type of household needs.",
+    title: "Grocery & Medicine",
+    description: "Launch a store that keeps daily needs just a click away!",
     image: komedei,
     url: "https://komedei.com/",
   },
   {
     id: 2,
     title: "Tools",
-    description: "Tools is for various type of industry tools needs.",
+    description: "Build a powerful online tool shop with ease!",
     image: tools,
     url: "https://tools.moonsgallerysystem.com/",
   },
   {
     id: 3,
-    title: "Viscart V2",
-    description: "V2 is for various type of woman fashion.",
+    title: "Cosmetics",
+    description: "Create a beauty store that customers will love!",
     image: v2,
     url: "https://viscart-client-v2.vercel.app/",
   },
   {
     id: 4,
-    title: "Viscart V3",
-    description: "V3 is for various type of children fashion.",
+    title: "Baby Shop",
+    description:
+      "Launch a baby shop that offers a wide range of baby products!",
     image: arshop,
     url: "https://arshopsbd.com/",
   },
   {
     id: 5,
-    title: "Viscart V4",
-    description: "V4 is for various type of woman borkha.",
+    title: "Fashion",
+    description: "Start and try your trendy fashion store today!",
     image: v4,
     url: "https://viscart-client-v4.vercel.app/",
   },
   {
     id: 6,
-    title: "Viscart V5",
-    description: "V5 is for various type of natural foods.",
+    title: "Organic",
+    description: "Bring fresh, organic products to your customers!",
     image: v5,
     url: "https://viscart-client-v5.vercel.app/",
   },
   {
     id: 7,
-    title: "Viscart V6",
-    description: "V6 is for various type of all necessary products.",
+    title: "Multipurpose",
+    description: "One platform, endless possibilities for your store!",
     image: v6,
     url: "https://viscart-client-yahmex.vercel.app/",
+  },
+  {
+    id: 8,
+    title: "Coming Soon!",
+    description: "More demos are coming soon!",
+    image: coming,
+    url: "/",
   },
 ];

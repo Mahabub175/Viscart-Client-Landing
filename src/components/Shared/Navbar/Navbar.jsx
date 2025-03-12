@@ -18,10 +18,10 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 w-full z-50 py-3 bg-white shadow-lg">
+    <nav className="py-3 bg-primary lg:bg-transparent">
       <div className="my-container flex items-center justify-between">
         <Link href="/">
-          <span className="text-xl font-bold text-primary">Viscart</span>
+          <span className="text-xl font-bold text-white">Viscart</span>
         </Link>
 
         <div className="hidden md:flex space-x-10">
@@ -29,8 +29,8 @@ const Navbar = () => {
             <Link
               key={link.name}
               href={link.link}
-              className={`hover:text-primary duration-300 font-medium ${
-                pathname === link?.link ? "text-primary" : ""
+              className={`hover:text-primaryLight duration-300 font-medium ${
+                pathname === link?.link ? "text-white" : ""
               }`}
             >
               {link.name}
@@ -40,13 +40,16 @@ const Navbar = () => {
 
         <div className="hidden md:flex">
           <Link href="mailto:vitasoftsolution@gmail.com">
-            <button className="text-white bg-primary px-10 py-2 rounded-lg font-bold">
+            <button className="text-primary bg-white px-10 py-2 rounded-lg font-bold">
               Contact
             </button>
           </Link>
         </div>
 
-        <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
+        <button
+          className="md:hidden text-white"
+          onClick={() => setIsOpen(!isOpen)}
+        >
           {isOpen ? <RxCross1 size={24} /> : <IoMenu size={24} />}
         </button>
       </div>
@@ -58,19 +61,19 @@ const Navbar = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden flex flex-col space-y-4 mt-4 p-4 bg-white shadow-lg"
+            className="md:hidden flex flex-col space-y-4 mt-4 p-4 bg-primary -mb-4"
           >
             {links.map((link) => (
               <Link
                 key={link.name}
                 href={link.link}
-                className="hover:text-primary duration-300 font-medium"
+                className="hover:text-primaryLight duration-300 font-medium text-white"
               >
                 {link.name}
               </Link>
             ))}
             <Link href="mailto:vitasoftsolutions@gmail.com">
-              <button className="text-white bg-primary px-10 py-2 rounded-lg font-bold">
+              <button className="text-primary bg-white px-10 py-2 rounded-lg font-bold">
                 Contact
               </button>
             </Link>
