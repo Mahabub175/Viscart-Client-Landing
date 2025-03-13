@@ -11,17 +11,17 @@ import coming from "@/assets/images/comingbg.png";
 export const demoData = [
   {
     id: 1,
-    title: "Grocery & Medicine",
-    description: "Launch a store that keeps daily needs just a click away!",
-    image: komedei,
-    url: "https://grocery.moonsgallerysystem.com/",
-  },
-  {
-    id: 2,
     title: "Tools",
     description: "Build a powerful online tool shop with ease!",
     image: tools,
     url: "https://tools.moonsgallerysystem.com/",
+  },
+  {
+    id: 2,
+    title: "Grocery & Medicine",
+    description: "Launch a store that keeps daily needs just a click away!",
+    image: komedei,
+    url: "https://grocery.moonsgallerysystem.com/",
   },
   {
     id: 3,
