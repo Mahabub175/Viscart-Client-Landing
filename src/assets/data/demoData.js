@@ -14,7 +14,7 @@ export const demoData = [
     title: "Grocery & Medicine",
     description: "Launch a store that keeps daily needs just a click away!",
     image: komedei,
-    url: "https://komedei.com/",
+    url: "https://grocery.moonsgallerysystem.com/",
   },
   {
     id: 2,
@@ -28,7 +28,7 @@ export const demoData = [
     title: "Cosmetics",
     description: "Create a beauty store that customers will love!",
     image: v2,
-    url: "https://viscart-client-v2.vercel.app/",
+    url: "https://cosmetics-topaz.vercel.app/",
   },
   {
     id: 4,
@@ -36,28 +36,28 @@ export const demoData = [
     description:
       "Launch a baby shop that offers a wide range of baby products!",
     image: arshop,
-    url: "https://arshopsbd.com/",
+    url: "https://baby.moonsgallerysystem.com/",
   },
   {
     id: 5,
     title: "Fashion",
     description: "Start and try your trendy fashion store today!",
     image: v4,
-    url: "https://viscart-client-v4.vercel.app/",
+    url: "https://fashion.moonsgallerysystem.com/",
   },
   {
     id: 6,
     title: "Organic",
     description: "Bring fresh, organic products to your customers!",
     image: v5,
-    url: "https://viscart-client-v5.vercel.app/",
+    url: "https://organic.moonsgallerysystem.com/",
   },
   {
     id: 7,
     title: "Multipurpose",
     description: "One platform, endless possibilities for your store!",
     image: v6,
-    url: "https://viscart-client-yahmex.vercel.app/",
+    url: "https://multipurpose.moonsgallerysystem.com/",
   },
   {
     id: 8,
